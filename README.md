@@ -3,7 +3,7 @@ A WordPress plugin for calculating accrued interest on an investment.
 
 ## Description
 
-The Responsive Investent Calculator is a jQuery widget and shortcode that's designed to fit easily into any theme, on any device, at any size. Quickly calculate accrued interest on a principal amount.
+The Responsive Investment Calculator is a jQuery widget and shortcode that's designed to fit easily into any theme, on any device, at any size. Quickly calculate accrued interest on a principal amount.
 
 __Features__
 
