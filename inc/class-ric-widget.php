@@ -11,12 +11,12 @@ class RICWidget extends WP_Widget
     public function __construct()
     {
 		$options = array(
-			'classname' => 'lidd_ric_widget',
+			'classname' => RIC::widget_id(),
 			'description' => __( 'Display a responsive investment calculator.', RIC::text_domain() )
 		);
 		
 		// Pass the options to WP_Widget to create the widget.
-		$this->WP_Widget( 'lidd_ric_widget', __( 'Responsive Investment Calculator', RIC::text_domain() ) );
+		$this->WP_Widget( RIC::widget_id(), __( 'Responsive Investment Calculator', RIC::text_domain() ) );
     }
 	/**
 	 * Build the widget settings form.
@@ -25,7 +25,7 @@ class RICWidget extends WP_Widget
 	 */
 	public function form( $instance )
 	{
-		$defaults = array( 'title' => __( 'Calculate Investment Interest', RIC::text-domain() ) );
+		$defaults = array( 'title' => __( 'Calculate Investment Interest', RIC::text_domain() ) );
 		$instance = wp_parse_args( (array) $instance, $defaults );
 		$title = $instance['title'];
 		

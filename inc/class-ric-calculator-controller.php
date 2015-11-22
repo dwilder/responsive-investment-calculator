@@ -50,7 +50,7 @@ class RICCalculatorController
     private function plugin_detected()
     {
         // Look for widget
-        if ( is_active_widget( RIC::widget_id() ) ) {
+        if ( is_active_widget( false, false, RIC::widget_id(), true ) ) {
             return true;
         }
         
